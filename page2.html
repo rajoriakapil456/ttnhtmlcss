@@ -1,0 +1,81 @@
+<!Doctype html>
+<head>
+<title>first form</title>
+<style>
+.formbody
+{
+    //border:2px solid black;
+	height:500px;
+	width:500px;
+	margin:auto;
+	border-radius:5px;
+}
+input
+{
+         margin-left:20px;
+	 border-radius:3px;
+	 width:75%;
+}
+label
+{
+      margin-left:20px;
+}
+textarea
+{
+   margin-left:20px;
+	 border-radius:3px;
+	 width:75%;
+}
+</style>
+</head>
+  <body>
+  <span style="margin-left:320px;color:#1ABC9C;">TO THE NEW</span>
+  <span style="margin-left:420px;color:#1ABC9C;">Help</span>
+  <span style="color:#1ABC9C;">Quick help</span>
+  <hr style="width:50%;"></hr>
+  <br>
+  <div class="formbody">
+  <div style="height:50px;background-color:#BCC3CA;margin-top:-21px;">
+   <h4 style="padding:20px;color:white;">Bug Report</h4>
+  </div><br>
+    <form>
+	<label>Title:*</label><br>
+	<input type="text" name="title" required><br><br>
+	  <label>Description:*</label><br>
+	<textarea rows="3"></textarea><br><br>
+	 <label>Operating System:</label><br>
+	 <select style="margin-left:20px;border-radius:3px;width:78%;background-color:#1ABC9C;color:white;">
+	 <option>window xp</option>
+	 <option>mac os</option>
+	 <option>linux</option>
+	 </select><br><br>
+	 <label>Product:*</label><br>
+	 <select style="margin-left:20px;border-radius:3px;width:78%;background-color:#1ABC9C;color:white;">
+	 <option>microsoft</option>
+	 <option>apple</option>
+	 <option>oracle</option>
+	 </select><br><br>
+	 <label>Version:*</label><br>
+	 <input type="text" name="version" style="width:60px;" required><br>
+	 <br>
+	 <label>License:</label><br>
+	 <label for="free">free</label>
+	 <input style="margin-left:-180px;"type="radio" id="free" name="licence_type" value="free"> 
+	  <label style="margin-left:-100px;" for="free">Business</label>
+	 <input style="margin-left:-180px;" type="radio" id="free" name="licence_type" value="free"><br>
+   <br>
+     <label>Severity:</label><br>
+	 <select style="margin-left:20px;border-radius:3px;width:78%;background-color:#1ABC9C;color:white;">
+	 <option>critical</option>
+	 <option>minor</option>
+	 <option>major</option>
+	 </select><br><br>
+	 <label>Attachment:</label>
+	 <input type="file" name="fileattach" value="upload">
+	</form>
+	<div style="height:40px;background-color:grey;margin-top:55px;">
+	      <button type="submit" style="background-color:#1ABC9C;color:#EDEFF1;margin-left:240px;margin-top:10px;">Send</button>
+	 </div>
+  </div>
+  </body>
+</html>
